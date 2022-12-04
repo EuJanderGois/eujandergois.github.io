@@ -9,7 +9,7 @@ html {
   font-size: 1rem;
   /* WEIGTH 300/700 */
   font-family: 'Ubuntu', Sans-Serif;
-  height: 200%;
+  height: auto;
 }
 body {
   margin: 0;
@@ -40,87 +40,52 @@ HEADER STYLES
 */
 
 .header-navigation {
-  display: flex;
-  justify-content: left;
+  display: inline-flex;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: auto;
   background-color: #1b194b;
   color: #fff;
-  padding: 3% 0;
+  padding: 1.5% 0;
 }
-
-/*
-
-BOXES STYLES
-
-*/
-
-.box-10 {
-  display: flex;
-  width: 10%;
-  justify-content: center;
-  align-items: center;
-}
-.box-20 {
-  display: flex;
-  width: 20%;
-}
-.box-50 {
-  display: flex;
+.title-box {
+  display: inline-flex;
   width: 50%;
-  padding: 1%;
-}
-.box-35 {
-  display: flex;
-  width: 35%;
-}
-.box-40 {
-  display: flex;
-  width: 40%;
-}
-.box-10.hmb {
-  margin: 0 3%;
-}
-.box-50.lang {
-  display: flex;
-  font-size: 0.8rem;
-  justify-content: right;
   align-items: center;
-}
-
-/* INSIDE */
-.box-15.hmb {
-  padding: 3%;
+  justify-content: center;
 }
 
 
 /* SVG CLASS SELECTOR */
-.bars-solid {
-  fill: #fff;
-  width: 35px;
-  height: 35px;
-}
-.earth-solid {
-  fill: #fff;
-  width: 15px;
-  height: 15px;
-}
+.earth-solid,
 .arr-down {
   fill: #fff;
   width: 15px;
   height: 15px;
 }
+.bars-solid,
+.whatsapp,
+.instagram,
+.linkedin {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
+
 
 
 
 
 /* LANGUAGE CONFIG BOX*/
 .lang.lang-box {
-  display: flex;
-  justify-content: right;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  word-wrap: normal;
+  width: 50%;
+  font-size: 0.8rem;
 }
 /* TEXT ON LANG BOX*/
 .text {
@@ -140,6 +105,10 @@ BOXES STYLES
 /* TEXT IN TITLE HEADER STYLE */
 .name {
   font-size: 1.6rem;
+  margin-left: 1.5%;
+}
+.name:hover {
+  cursor: default;
 }
 
 
@@ -173,7 +142,7 @@ BOXES STYLES
 .text-combo {
   display: block;
   justify-content: center;
-  margin: 5% 15%;
+  margin: 5% 20%;
   width: auto;
   background-color: #fff;
   border-radius: 3px;
@@ -265,39 +234,44 @@ dialog {
 
 footer {
   display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 2%;
+  justify-content: center;
+  align-items: baseline;
   background-color: #1b194b;
   color: #fff;
-  padding: 1% 0;
 }
 
 .footer-midle-box {
-  display: block;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3%;
 }
 
-.dev, .dev-name, .copy {
+.copy {
   display: flex;
   width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 0;
   font-size: 0.9rem;
 }
 
 .contact-icons {
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  position: absolute;
 }
 .contact-icons a {
-  margin: 0 1.5%;
+  margin: 0 1%;
 }
 .contact-icons svg:hover {
   fill: #bebebe;
-}
-#whatsapp_icon, #instagram_icon, #linkedin_icon {
-  fill: #fff;
-  width: 30px;
-  height: 30px;
 }
 
 .language-modal {
@@ -336,4 +310,56 @@ footer {
 .en-option:hover {
   border: 2px solid #fff;
   cursor: pointer;
-} 
+}
+
+@media (max-width: 480px) {
+  .text-combo {
+    width: 100vw;
+    margin: 5% 0;
+    padding: 0;
+  }
+  .title-box {
+    justify-content: left;
+  }
+  .header-navigation {
+    padding: 2% 0;
+  }
+  .lang.lang-box{
+    font-size: 0.8rem;
+    justify-content: right;
+  }
+  .lang-text {
+    padding: 0 1.5%;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  footer {
+    padding-top: 3%;
+  }
+  .footer-midle-box {
+    margin-top: 5%;
+  }
+
+
+  /*
+    SVG ICONS
+  */
+  .arr-down,
+  .earth-solid {
+    width: 10px;
+    height: 10px;
+  }
+  .bars-solid,
+  .whatsapp,
+  .instagram,
+  .linkedin {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 280px) {
+  .lang-text {
+    display: none;
+  }
+}
