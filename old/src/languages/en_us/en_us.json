@@ -1,0 +1,34 @@
+{
+    "header": {
+        "title": "Jander Gois"
+    },
+    "personal": {
+        "title": "That I am?",
+        "text": "Welcome to my portfolio. Basicaly I'am Janderson Gois and I'm a braziliam Front-end developer. To know more about me you can click in the button bellow to be redirected to personal info page."
+    },
+    "tecnologies": {
+        "title": "Tecnologies",
+        "text": "On this page I used the most basic of Front-end technology because I believe I need to be good at the basics at least. I know other technologies like React, jQuery and a little Back-end. Here you will find more about how I use these front-end technologies."
+    },
+    "skills": {
+        "title": "Skills",
+        "text": "Having knowledge is certainly important, but it's no use if I don't tell you what I'm good at."
+    },
+    "projects": {
+        "title": "Projects",
+        "text": "A place where you can find all the information about my projects, how they were developed and the technologies behind the magic."
+    },
+    "cookies": {
+        "title": null,
+        "text": "For you better experience, this app can use cookies."
+    },
+    "footer": {
+        "developer": "",
+        "copyright": "2022 &copy All rights reserved"
+    },
+    "buttons": {
+        "understand": "I understand",
+        "close_app": "Close app",
+        "read_more": "Read more"
+    }
+}

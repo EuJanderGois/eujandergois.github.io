@@ -1,0 +1,33 @@
+{
+    "default_language": "pt_br",
+    "cookies": false,
+    
+    "languages": {
+        "en_us": {
+            "folder": "./languages/en_us/controler.mjs",
+            "name": "English (US)"
+        },
+        "pt_br": {
+            "folder": "./languages/pt_br/controler.mjs",
+            "name": "Português (BR)"
+        }
+    },
+    "folders": {
+        "main": "./",
+        "modules": "./modules",
+        "languages": "./languages"
+    },
+    "colors": {
+        "blue": "#1b194b",
+        "secondary_blue": "#3a3881",
+        "light": "#fff",
+        "light_secondary": "#bebebe",
+        "dark": "#000"
+    },
+    "developer": {
+        "name": "@eujandergois",
+        "copyright": "All rights reserved",
+        "year": "2022",
+        "version": "1.0.3"
+    }
+}

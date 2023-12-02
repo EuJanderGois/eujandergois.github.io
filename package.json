@@ -1,0 +1,18 @@
+{
+  "name": "eujandergois",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "eujandergois.github.io",
+  "author": "eujandergois",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"yarn run sass\" \"yarn run ts\"",
+    "sass": "sass --watch styles/style.scss styles/style.css",
+    "ts": "npx tsc --watch"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "sass": "^1.69.2",
+    "typescript": "^5.2.2"
+  }
+}

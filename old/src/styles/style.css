@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Ubuntu:wght@300;700&display=swap');
+html {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  display: block;
+  background-color: #f4f5f5;
+  font-size: 1rem;
+  /* WEIGTH 300/700 */
+  font-family: 'Ubuntu', Sans-Serif;
+  height: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  background-color: #bebebe67;
+}
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+section {
+  margin: 0;
+  padding: 0;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #3a3881;
+}
+button::selection {
+  border: none;
+}
+
+/*
+HEADER STYLES
+*/
+
+.header-navigation {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: #1b194b;
+  color: #fff;
+  padding: 1.5% 0;
+}
+.title-box {
+  display: inline-flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* SVG CLASS SELECTOR */
+.earth-solid,
+.arr-down {
+  fill: #fff;
+  width: 15px;
+  height: 15px;
+}
+.bars-solid,
+.whatsapp,
+.instagram,
+.linkedin {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+
+/* LANGUAGE CONFIG BOX*/
+.lang.lang-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: normal;
+  width: 50%;
+  font-size: 0.8rem;
+}
+/* TEXT ON LANG BOX*/
+.text {
+  width: auto;
+  margin: 0 1%;
+}
+
+/* ON HOVER STYLES */
+.lang-box:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.bars-solid:hover {
+  cursor: pointer;
+}
+
+/* TEXT IN TITLE HEADER STYLE */
+.name {
+  font-size: 1.6rem;
+  margin-left: 1.5%;
+}
+.name:hover {
+  cursor: default;
+}
+
+
+/* FOR HIDE ELEMENTS WITH CLASS*/
+.hidden {
+  display: none;
+}
+
+
+/* BUTTONS STYLES */
+.btn {
+  font-size: 1rem;
+  background-color: #1b194b;
+  border: none;
+  color: #fff;
+  padding: 0.8em;
+  border-radius: 3px;
+}
+/* FOR CENTERED BUTTONS */
+.centered {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  margin: 3% 0;
+}
+
+
+/* ALL TEXT STYLES */
+/* ABOUT BOX WITH TEXT INSIDE */
+.text-combo {
+  display: block;
+  justify-content: center;
+  margin: 5% 20%;
+  width: auto;
+  background-color: #fff;
+  border-radius: 3px;
+  text-align: center;
+}
+/* ABOUT TEXT TITLE*/
+.title {
+  display: inline-flex;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  justify-content: center;
+  height: auto;
+  padding: 3% 0;
+}
+/*ABOUT TEXT SUBTITLE*/
+.subtitle {
+  display: inline-flex;
+  width: 100%;
+  font-size: 0.8rem;
+  justify-content: center;
+  height: auto;
+}
+/*ABOUT TEXT PARAGRAPH*/
+.paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.paragraph p {
+  font-size: 1.2rem;
+  margin: 1% 6%;
+}
+
+/*
+
+DIALOGS
+
+*/
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.6);
+}
+dialog {
+  border: none;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.top {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+}
+.m-text {
+  text-align: center;
+  padding: 5% 1%;
+}
+.m-btn {
+  font-size: 0.9rem;
+  padding: 0.8em;
+}
+.close {
+  fill: #1b194b;
+  width: 15px;
+  height: 15px;
+  stroke: none;
+}
+.yes {
+  background-color: #1fc21f;
+}
+.yes:hover {
+  background-color: #059605;
+}
+.warn {
+  background-color: #f14a4a;
+}
+.warn:hover {
+  background-color: #ff1919;
+}
+
+
+.img img {
+  width: 45%;
+  height: 45%;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 2%;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #1b194b;
+  color: #fff;
+}
+
+.footer-midle-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.copy {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+}
+.contact-icons a {
+  margin: 0 1%;
+}
+.contact-icons svg:hover {
+  fill: #bebebe;
+}
+
+.language-modal {
+  position: absolute;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  top: 1.5%;
+  right: 17%;
+  padding: 1%;
+  border: none;
+  text-align: center;
+  color: #fff;
+  background-color: none;
+}
+
+.pt-option, .en-option {
+  display: flex;
+  padding: 3.5% 10%;
+  margin: 5% 0;
+  background-color: none;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.404);
+  border-radius: 3px;
+  justify-content: center;
+  text-align: center;
+}
+.x {
+  display: flex;
+  width: 100%;
+  color: #fff;
+  justify-content: right;
+  margin: 0 0 1% 0;
+}
+.pt-option:hover,
+.en-option:hover {
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .text-combo {
+    width: 100vw;
+    margin: 5% 0;
+    padding: 0;
+  }
+  .title-box {
+    justify-content: left;
+  }
+  .header-navigation {
+    padding: 2% 0;
+  }
+  .lang.lang-box{
+    font-size: 0.8rem;
+    justify-content: right;
+  }
+  .lang-text {
+    padding: 0 1.5%;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  footer {
+    padding-top: 3%;
+  }
+  .footer-midle-box {
+    margin-top: 5%;
+  }
+
+
+  /*
+    SVG ICONS
+  */
+  .arr-down,
+  .earth-solid {
+    width: 10px;
+    height: 10px;
+  }
+  .bars-solid,
+  .whatsapp,
+  .instagram,
+  .linkedin {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 280px) {
+  .lang-text {
+    display: none;
+  }
+}
